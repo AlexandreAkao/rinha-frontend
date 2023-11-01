@@ -8,9 +8,6 @@ export default function Home() {
   const [hasError, setHasError] = useState(false);
   const [jsonContent, setJsonContent] = useState<JSONType>();
 
-  const clearJson = () => {
-    setJsonContent(undefined);
-  };
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
       {jsonContent ? (
