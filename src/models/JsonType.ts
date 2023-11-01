@@ -1,6 +1,1 @@
-type JSONType =
-  | string
-  | number
-  | boolean
-  | Record<string, unknown>
-  | Array<Record<string, unknown>>;
+type JSONType = Record<string, unknown> | Array<Record<string, unknown>>;

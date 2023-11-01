@@ -14,15 +14,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
       {jsonContent ? (
-        <>
-          <JsonTreeViewer json={jsonContent} />
-          <button
-            className="bg-gradient-to-t from-neutral-100 to-neutral-200 border border-black px-3 py-1.5 rounded cursor-pointer"
-            onClick={clearJson}
-          >
-            Voltar
-          </button>
-        </>
+        <JsonTreeViewer json={jsonContent} />
       ) : (
         <div className="flex flex-col items-center gap-6">
           <h1 className="text-5xl font-bold">JSON Tree Viewer</h1>
